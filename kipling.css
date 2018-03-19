@@ -114,3 +114,10 @@ aside, nav {
       -ms-flex: 1;
           flex: 1;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}

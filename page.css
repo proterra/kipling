@@ -24,6 +24,15 @@ article.quote {
     border:none;
 }
 
+
+article .row {
+    display: flex;
+}
+
+article .column {
+    flex: 50%;
+}
+
 .quote {
     padding: 1em;
     margin: 0.25em;
@@ -44,13 +53,12 @@ article.quote {
     font-size: 3.50rem;
     font-style: oblique;
 }
+nav {
+   
+    
 
-aside {
-    /* padding: 0.25em;
-    margin: 0.25em;
-    border-radius: 0.25em; */
-    /* background-color: #564787; */
 }
+
 .title h1 {
     color: #F8F0FB;
     font-weight: 600;
@@ -90,12 +98,15 @@ article h2 {
     font-size: 3.50rem;
 } 
 
-article p {
+article p,li {
     color: #F8F0FB;
     font-weight: 400;
     font-size: 3.0rem
 }
 
+article ul {
+    list-style-type: none;
+}
 
 svg {
     font-family: "Source Code Pro"
