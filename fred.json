@@ -1,0 +1,62 @@
+{
+    "duration": 2,
+    "name": "Event",
+    "subject": "markedwards@ampretia.co.uk",
+    "activationId": "ff0d66babef3481b8d66babef3f81b07",
+    "publish": false,
+    "annotations": [
+        {
+            "key": "limits",
+            "value": {
+                "timeout": 60000,
+                "memory": 256,
+                "logs": 10
+            }
+        },
+        {
+            "key": "path",
+            "value": "markedwards@ampretia.co.uk_dev/Ampretia/Event"
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:8"
+        },
+        {
+            "key": "waitTime",
+            "value": 16
+        }
+    ],
+    "version": "0.0.1",
+    "response": {
+        "result": {
+            "message": "Hello World",
+            "payload": {
+                "__ow_method": "post",
+                "CardName": "fred",
+                "you": "Draw",
+                "__ow_headers": {
+                    "accept": "application/json, text/plain, */*",
+                    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36",
+                    "x-client-ip": "86.162.238.117",
+                    "accept-language": "en-GB, en-US;q=0.9, en;q=0.8",
+                    "x-forwarded-proto": "https",
+                    "host": "openwhisk.eu-gb.bluemix.net:443",
+                    "content-type": "application/json",
+                    "origin": "http://localhost:5000",
+                    "via": "1.1 EwAAAAFh0QY-",
+                    "x-global-transaction-id": "1426372643",
+                    "referer": "http://localhost:5000/",
+                    "accept-encoding": "gzip, deflate, br",
+                    "x-forwarded-for": "86.162.238.117"
+                },
+                "__ow_path": ""
+            }
+        },
+        "success": true,
+        "status": "success"
+    },
+    "end": 1520672138862,
+    "logs": [],
+    "start": 1520672138860,
+    "namespace": "markedwards@ampretia.co.uk_dev"
+}

@@ -1,0 +1,17 @@
+
+
+Story {
+  o String id
+  o String referenceToStoryTemplate
+  o Verb[]  verbs
+  o Noun[]  nouns
+  o FirstName[] firstNames
+  o Animal[]
+  o Pet[]
+  o Colour
+  o Food
+}
+
+transaction AddToStory {
+  o String storyToAddTo
+}

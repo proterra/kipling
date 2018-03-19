@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Osprey - Critique</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="./normalize.css" rel="stylesheet">
+  <link href="./page.css" rel="stylesheet">
+  <link href="./kipling.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.css" />
+</head>
+
+<body class="vbox viewport">
+  <header></header>
+
+  <div class="main hbox space-between">
+    <nav></nav>
+
+    <article class="quote" id="waiting">
+        <div class="spinner"></div>
+    </article>
+
+    <article class="title">
+      <h1>Aspects of Image Critique</h1>
+      <h2>A personal perspective</h2>
+      <h3 class="right">Matthew White</h3>
+    </article>
+
+    <article class="quote">
+      <div class="quote">
+        <div class="text">
+          <p>I KEEP six honest serving-men
+            (They taught me all I knew);</p>
+           <p>Their names are <span class="what">What</span> and Why and When 
+            And How and Where and Who.</p>
+        </div>
+        <div class="source">
+          <p>Ryard Kippling</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="reveal">
+      <h1>Dear Syndey,</h1>
+
+      <p class="reveal">Hello World 1</p>
+      <p class="reveal">Hello World 1</p>
+      <p class="reveal">Hello World 1</p>
+      <p class="reveal">Hello World 1</p>
+
+    </article>
+
+
+    <article>
+      <h3>Good example of thirds</h3>
+      <div class="images">
+        <a href="img/imageone.jpg" data-caption="Image caption">
+          <img src="img/thumbnails/imageone.jpg" alt="First image">
+        </a>
+      </div>
+      <p>Some words to describe this or not
+      </p>
+    </article>
+
+    <article class="h3">
+      <p>I don’t really know what this object was supposed to be and the parrots showed me some other humans who apparently
+        were not in favour of this thing. They had sticks and were throwing at this noisy yellow object, that was lurching
+        around the place. Apparently they had once lived there and now they had nowhere to live. Some other people had pieces
+        of wood which they had written “NO BYPASS” on. Well I don’t know what the world is coming to, really I don’t. I must
+        fly on now. Regards, Wilberforce.
+
+      </p>
+
+
+    </article>
+
+    <aside></aside>
+
+  </div>
+  <footer></footer>
+  
+  
+  
+  
+  <script>
+    // list of the articles, current article, and are we paging through articles or not
+    var articles;
+    var current = 0;
+    var articleEnabled = true;
+
+    // list of the parts of an article to reveal?  And are we stepping over those or not
+    var revealEnabled = false;
+    var revealList;
+    var nextToReveal = 0;
+
+    // function to setup the reveal of an Article
+    var goReveal = function () {
+      // hide all the child elements of the current Article with the reveal class
+      revealList = $(articles[current]).find(".reveal").toArray()
+      for (var i = 0; i < revealList.length; i++) {
+        $(revealList[i]).hide();
+      }
+      // now fade in the article, but with the marked bits hidden
+      $(articles[current]).fadeIn("slow");
+    }
+
+    // function to reveal the next part of the article
+    var advanceReveal = function () {
+      $(revealList[nextToReveal]).fadeIn("slow");
+      nextToReveal++;
+      if (nextToReveal == revealList.length) {
+        // that's it nothing more to reveal, let's move on to the next article  when the event happens again
+        nextToReveal=0;
+        revealEnabled = false;
+        articleEnabled = true;
+      }
+    }
+
+    var retreatReveal = function () {
+      if (nextToReveal===0){
+        // we're at the start but not been asked to go forward but back
+        // therefore need to swap back into 'article' progress
+        nextToReveal=0;
+        revealEnabled=false;
+        articleEnabled=true;
+        retreatArticle();
+      } else {
+        nextToReveal--;
+        $(revealList[nextToReveal]).fadeOut("slow", function(){
+
+        });
+      }
+    }
+
+    // function to advance the article to the next one
+    var advanceArticle = function () {
+      $(articles[current]).fadeOut("slow", function () {
+        current++;
+        if (current !== articles.length) {
+
+          // if the article is marked as one that has revealing elements
+          // swap the handling of events to the reveal function
+          if ($(articles[current]).hasClass("reveal")) {
+            articleEnabled = false;
+            revealEnabled = true;
+            goReveal();
+          } else {
+            $(articles[current]).fadeIn("slow");
+          }
+
+        }
+      });
+    }
+
+    // function to move back to the previous article
+    var retreatArticle = function () {
+      $(articles[current]).fadeOut("slow", function () {
+        if (current > 0) {
+          current--;
+          // if the article is marked as one that has revealing elements
+          // swap the handling of events to the reveal function
+          if ($(articles[current]).hasClass("reveal")) {
+            articleEnabled = false;
+            revealEnabled = true;
+            goReveal();
+          } else {
+            $(articles[current]).fadeIn("slow");
+          }
+        }
+      });
+    }
+
+    // read to roll...
+    $(document).ready(function () {
+
+      // get all the articles within this document and hide them
+      // note the start from 1 to miss the main title
+      articles = $("article").toArray();
+      for (var i = 0; i < articles.length; i++) {
+        $(articles[i]).hide();
+      }
+
+      $("#waiting").show();
+
+      // For any keypresses, if it's advance or retreat do that.. 
+      $("html").keydown(function (e) {
+        var key = e.which;
+        if (key === 39 || key === 40 || key === 34) {
+          if (articleEnabled) {
+            advanceArticle()
+          } else {
+            advanceReveal();
+          }
+        } else if (key === 37 || key === 38 || key === 33) {
+          if (articleEnabled){
+            retreatArticle();
+          } else {
+            retreatReveal();
+          }
+          
+        }
+        
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
