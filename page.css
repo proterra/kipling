@@ -80,6 +80,15 @@ nav {
     font-style: oblique;
 } 
 
+h3 {
+    color: #DBCBD8;
+    font-weight: 300;
+    font-size: 2.50rem;
+    line-height: 450%;
+    font-style: oblique;
+    text-align: center;
+} 
+
 .right {
     float: right;
     width: 300px;
@@ -102,6 +111,10 @@ article p,li {
     color: #F8F0FB;
     font-weight: 400;
     font-size: 3.0rem
+}
+
+.seen {
+    color: #3f2f75;
 }
 
 article ul {
