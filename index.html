@@ -9,21 +9,16 @@
       display: none;
     }
   </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript">
     $('html').addClass('hidden');
   </script>
   <link href="./normalize.css" rel="stylesheet">
   <link href="./page.css" rel="stylesheet">
   <link href="./kipling.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-    crossorigin="anonymous"></script>
-
-
-  <link rel="stylesheet" href="./halkabox.min.css">
-  <script src="./halkabox.min.js"></script>
+  <script src="./node_modules/baguettebox.js/dist/baguetteBox.js"></script>
+  <link rel="stylesheet" href="./node_modules/baguettebox.js/dist/baguetteBox.css" />
+  <link href="./fontawesome/css/fontawesome-all.css" rel="stylesheet">
 </head>
 
 <body class="vbox viewport">
@@ -40,6 +35,8 @@
       </h3>
     </article>
 
+
+    </article>
     <!-- ========================================================================== -->
 
     <article class="title">
@@ -59,14 +56,15 @@
           <p>Their names are
             <span class="what">What</span> and
             <span class="why">Why</span> and When And
-            <span class="how">How</span> and Where and Who.</p>
+            <span class="how">How</span> and Where and Who.
+          </p>
         </div>
         <div class="source">
           <p>Rudyard Kippling</p>
         </div>
       </div>
 
-      <p class="notes">
+      <div class="notes">
         A very valuable phrasing to remember the important questions; in this discussion the two most important ones are the
         <b>Why</b> and the
         <b>How</b>. Will save the why to the end. Firstly we'll review some thoughts on the what.
@@ -74,7 +72,7 @@
           A good reference on the background to to Kipling's poem is
           <a href="http://standrewslean.com/blog/six-honest-serving-men/">here</a>
         </p>
-      </p>
+      </div>
     </article>
 
     <!-- ========================================================================== -->
@@ -91,15 +89,17 @@
 
     </article>
 
+    <!-- Composition section-->
+
     <article class="title">
-        <h1>Composition, Rules and Approach</h1>
-      
-        <div class="row">
-          <div class="column">
-            <img class="center" src="./imgs/composition-header.jpg" />
-          </div>
+      <h1>Composition, Rules and Approach</h1>
+
+      <div class="row">
+        <div class="column">
+          <img class="center" src="./imgs/composition-header.jpg" />
         </div>
-      </article>
+      </div>
+    </article>
 
     <article class="reveal">
       <h2>Composition is the act of .. </h2>
@@ -119,7 +119,7 @@
 
     <article>
       <h2>Rules to make the choices!</h2>
-      <img src="imgs/20150718-0144.jpg" class="center"></img>
+      <img src="imgs/20130709-0044.jpg" class="right"></img>
 
       <p class="notes">
         When a rule works it works - yippee; but it can be 'forumalic' Breaking a rule it won't make the image; but it can be an
@@ -146,82 +146,51 @@
 
     </article>
 
-    <article class="reveal solo">
-      <h2>Aesthetic Aspects</h2>
-      <ul>
-        <li class="reveal">
-          <p>
-            <b>Balance</b>
-          </p>
-          <p>Is the image aligned correctly or not?</p>
-        </li>
-        <li class="reveal">
-          <p>
-            <b>Logic</b>
-          </p>
-          <p>Is the arrange of the visual elements effective?</p>
-        </li>
-        <li class="reveal">
-          <p>
-            <b>Purpose</b>
-          </p>
-          <p>Is their a strong centre of interest, pattern or design?</p>
-        </li>
-        <li class="reveal">
-          <p>
-            <b>Clarity</b>
-          </p>
-          <p>Is it simpkle, yet comnplete and without distracting elements?</p>
-        </li>
-      </ul>
-    </article>
-
-    <article class="reveal solo">
-      <h2>Technical Apects</h2>
-      <ul>
-        <li class="reveal">
-          <p>
-            <b>Focus</b>
-          </p>
-          <p>Is the image sharp with approraite depth of field?</p>
-        </li>
-        <li class="reveal">
-          <p>
-            <b>Cleanliness</b>
-          </p>
-          <p>Is it free of marks, dust spots, lens flare, compression articfacts?</p>
-        </li>
-        <li class="reveal">
-          <p>
-            <b>Exposure</b>
-          </p>
-          <p>Too light or too dark? Overall or 'burnt-out' highlights 'blocked-up' shadows?</p>
-        </li>
-        <li class="reveal">
-          <p>
-            <b>Lighting</b>
-          </p>
-          <p>Does the light give enough contrast, has the colour temperature been handled?</p>
-        </li>
-        <li class="reveal">
-          <p>
-            <b>Colours</b>
-          </p>
-          <p>Does it have natural colours? Or is there a colour cast?</p>
-        </li>
-      </ul>
-    </article>
 
     <!-- ========================================================================== -->
     <article class="title">
-        <h1>On judging, judges and being judged</h1>
-      
-        <div class="row">
-          <div class="column">
-            <img class="center" src="./imgs/composition-header.jpg" />
-          </div>
+      <h1>On judging and judges </h1>
+
+      <div class="row">
+        <div class="column">
+          <img class="center" src="./imgs/think-header.jpg" />
         </div>
-      </article>
+      </div>
+    </article>
+
+    <article class="reveal solo">
+      <h2>Aspects that should be covered</h2>
+      <ul>
+        <li class="reveal">
+          <p>
+            <b>Technical Aspects</b>
+          </p>
+          <p>
+            Has the craft been mastered and used with effect?
+          </p>
+        </li>
+        <li class="reveal">
+          <p>
+            <b>Compositional rules</b>
+          </p>
+          <p>How are they working in this image?</p>
+        </li>
+        <li class="reveal">
+          <p>
+            <b>Alternate approaches</b>
+          </p>
+          <p>What could have been tried instead</p>
+        </li>
+        <li class="reveal">
+          <p>
+            <b>Emotional connection</b>
+          </p>
+          <p>is this making a connection to me</p>
+        </li>
+      </ul>
+    </article>
+
+
 
     <article class="quote">
       <div class="quote">
@@ -234,82 +203,41 @@
       </div>
     </article>
 
-    <article class="reveal solo">
-      <h2>Aspects that should be covered</h2>
-      <ul>
-        <li class="reveal">
-          <b>Technical Aspects</b> - shutter speed, panning, focus etc </li>
-        <li class="reveal">
-          <b>Compositional rules</b> - how are they working in this image </li>
-        <li class="reveal">
-          <b>Alternate approaches</b> - what could have been tried instead </li>
-        <li class="reveal">
-          <b>Emotional connection</b> - is this making a connection to me </li>
-      </ul>
-    </article>
-
-
-
     <!-- ========================================================================== -->
 
-    <article class="how">
-      <h2>My tips on how to critique</h2>
+    <article class="reveal">
+      <h2>Big Hero Six</h2>
       <div class="row">
         <div class="column">
           <ul>
-            <li>
+            <li class="reveal">
               <p>Eye</p>
             </li>
-            <li>
-              <p>Edges </p>
+            <li class="reveal">
+              <p>Edges</p>
             </li>
-            <li>
-              <p>Elements
-
-              </p>
+            <li class="reveal">
+              <p>Everything counts</p>
             </li>
           </ul>
         </div>
         <div class="column">
           <ul>
-            <li>
+            <li class="reveal">
               <p>Ego
               </p>
             </li>
-            <li>
+            <li class="reveal">
               <p>Emotion
               </p>
             </li>
-            <li>
-              <p>Explore
+            <li class="reveal">
+              <p>Explore and Practice and Practise
               </p>
             </li>
           </ul>
         </div>
 
-
-    </article>
-    <!-- ========================================================================== -->
-    <!-- Art and the why -->
-    <article class="quote">
-      <div class="quote">
-        <div class="text">
-          <p>"A work of art that did not begin in emotion is not art"</p>
-        </div>
-        <div class="source">
-          <p>Paul Cezanne</p>
-        </div>
-      </div>
-    </article>
-
-    <article>
-      <h2>Why are you taking images?</h2>
-      <ul>
-        <li>Do you want to make a point?</li>
-        <li>Do you want to record history?</li>
-        <li>Do you want to communicate something?</li>
-        <li>Do you want to have fun?</li>
-      </ul>
 
     </article>
 
@@ -327,199 +255,277 @@
       </p>
     </article>
 
+    <!-- ========================================================================== -->
+    <!-- Art and the why -->
+
+
+    <article class="reveal">
+      <h2>Why are you taking images?</h2>
+      <ul>
+        <li class="reveal">Do you want to make a point?</li>
+        <li class="reveal">Do you want to record history?</li>
+        <li class="reveal">Do you want to communicate something?</li>
+        <li class="reveal">Do you want to have fun?</li>
+      </ul>
+
+    </article>
+
+    <article class="quote">
+      <div class="quote">
+        <div class="text">
+          <p>"A work of art that did not begin in emotion is not art"</p>
+        </div>
+        <div class="source">
+          <p>Paul Cezanne</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- interval -->
+
+
     <article class="gallery">
-      <div class="row">
-        <div class="column">
-          <a href="./imgs/harbour.jpg" class="hb-single">
+      <div class="row center">
+        <div class="column center">
+          <a href="./imgs/harbour.jpg">
             <img class="center" src="./imgs/harbour.jpg"></img>
           </a>
         </div>
-        <div class="column">
-          <a href="./imgs/pier.jpg" class="hb-single">
+        <div class="column center">
+          <a href="./imgs/pier.jpg">
             <img class="center" src="./imgs/pier.jpg"></img>
+          </a>
+        </div>
+        <div class="column center">
+          <a href="./imgs/Thoughtfull.jpg">
+            <img class="center" src="./imgs/Thoughtfull.jpg"></img>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row center">
+        <div class="column center">
+          <a href="./imgs/me-thasnotmoon.jpg">
+            <img class="center" src="./imgs/me-thasnotmoon.jpg"></img>
+          </a>
+        </div>
+        <div class="column center">
+          <a href="./imgs/20170806-0115.jpg">
+            <img class="center" src="./imgs/20170806-0115.jpg"></img>
+          </a>
+        </div>
+        <div class="column center">
+          <a href="./imgs/IMG_20170421_150649108-01.jpeg">
+            <img class="center" src="./imgs/IMG_20170421_150649108-01.jpeg"></img>
           </a>
         </div>
       </div>
-      <div class="row">
-        <div class="column">
-          <a href="./imgs/harbour.jpg" class="hb-single">
-            <img class="center" src="./imgs/harbour.jpg"></img>
+      <div class="row center">
+        <div class="column center">
+          <a href="./imgs/20130709-0044.jpg">
+            <img class="center" src="./imgs/20130709-0044.jpg"></img>
           </a>
         </div>
-        <div class="column">
-          <a href="./imgs/pier.jpg" class="hb-single">
-            <img class="center" src="./imgs/pier.jpg"></img>
+        <div class="column center">
+          <a href="./imgs/IMG_20170628_093704238-01.jpg">
+            <img class="center" src="./imgs/IMG_20170628_093704238-01.jpg"></img>
+          </a>
+        </div>
+        <div class="column center">
+          <a href="./imgs/IMG_20170811_121935132-01.jpg">
+            <img class="center" src="./imgs/IMG_20170811_121935132-01.jpg"></img>
+          </a>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="column center">
+          <a href="./imgs/20090918_1144p.jpg">
+            <img class="center" src="./imgs/20090918_1144p.jpg"></img>
+          </a>
+        </div>
+        <div class="column center">
+          <a href="./imgs/NoSun.jpg">
+            <img class="center" src="./imgs/NoSun.jpg"></img>
+          </a>
+        </div>
+        <div class="column center">
+          <a href="./imgs/IMG_20170923_162519423-01.jpg">
+            <img class="center" src="./imgs/IMG_20170923_162519423-01.jpg"></img>
           </a>
         </div>
       </div>
     </article>
 
-    <!-- ========================================================================== -->
-    <aside></aside>
 
-    </div>
-    <footer></footer>
+      <!-- ========================================================================== -->
+      <aside></aside>
 
-    <!-- ========================================================================== -->
+      </div>
+      <footer></footer>
 
-    <script>
-      // list of the articles, current article, and are we paging through articles or not
-      var articles;
-      var current = 0;
-      var articleEnabled = true;
+      <!-- ========================================================================== -->
 
-      // list of the parts of an article to reveal?  And are we stepping over those or not
-      var revealEnabled = false;
-      var revealList;
-      var nextToReveal = 0;
+      <script>
+        // list of the articles, current article, and are we paging through articles or not
+        var articles;
+        var current = 0;
+        var articleEnabled = true;
 
-      var manner = 'presentation';
-
-      // function to setup the reveal of an Article
-      var goReveal = function () {
-        // hide all the child elements of the current Article with the reveal class
-        revealList = $(articles[current]).find(".reveal").toArray()
-        for (var i = 0; i < revealList.length; i++) {
-          $(revealList[i]).hide();
+        // list of the parts of an article to reveal?  And are we stepping over those or not
+        var revealEnabled = false;
+        var revealList;
+        var nextToReveal = 0;
+        var enabled = true;
+        var manner = 'presentation';
+        let enableKeyPresses = function () {
+          enabled = true;
         }
-        // now fade in the article, but with the marked bits hidden
-        $(articles[current]).fadeIn("slow");
-      }
+        // function to setup the reveal of an Article
+        var goReveal = function () {
+          // hide all the child elements of the current Article with the reveal class
+          revealList = $(articles[current]).find(".reveal").toArray()
+          for (var i = 0; i < revealList.length; i++) {
+            $(revealList[i]).hide();
+          }
+          // now fade in the article, but with the marked bits hidden
+          $(articles[current]).fadeIn("slow", enableKeyPresses);
+        }
 
-      // function to reveal the next part of the article
-      var advanceReveal = function () {
-        let nextaction = function () {
-          $(revealList[nextToReveal - 1]).addClass("seen");
-          $(revealList[nextToReveal]).fadeIn("slow", function () {
-            nextToReveal++;
-            if (nextToReveal == revealList.length) {
-              // that's it nothing more to reveal, let's move on to the next article  when the event happens again
-              nextToReveal = 0;
-              revealEnabled = false;
-              articleEnabled = true;
-            }
-          });
-
-        };
-
-        if ($(articles[current]).hasClass("solo")) {
-          if (nextToReveal > 0) {
+        // function to reveal the next part of the article
+        var advanceReveal = function () {
+          let nextaction = function () {
             $(revealList[nextToReveal - 1]).addClass("seen");
-            $(revealList[nextToReveal - 1]).fadeOut("slow", nextaction);
+            $(revealList[nextToReveal]).fadeIn("slow", function () {
+              nextToReveal++;
+              if (nextToReveal == revealList.length) {
+                // that's it nothing more to reveal, let's move on to the next article  when the event happens again
+                nextToReveal = 0;
+                revealEnabled = false;
+                articleEnabled = true;
+
+
+              }
+              enableKeyPresses();
+            });
+
+          };
+
+          if ($(articles[current]).hasClass("solo")) {
+            if (nextToReveal > 0) {
+              $(revealList[nextToReveal - 1]).addClass("seen");
+              $(revealList[nextToReveal - 1]).fadeOut("slow", nextaction);
+            } else {
+              nextaction();
+            }
           } else {
             nextaction();
           }
-        } else {
-          nextaction();
         }
-      }
 
-      var retreatReveal = function () {
-        if (nextToReveal === 0) {
-          // we're at the start but not been asked to go forward but back
-          // therefore need to swap back into 'article' progress
-          nextToReveal = 0;
-          revealEnabled = false;
-          articleEnabled = true;
-          retreatArticle();
-        } else {
-          nextToReveal--;
-          $(revealList[nextToReveal]).fadeOut("slow", function () {
+        var retreatReveal = function () {
+          if (nextToReveal === 0) {
+            // we're at the start but not been asked to go forward but back
+            // therefore need to swap back into 'article' progress
+            nextToReveal = 0;
+            revealEnabled = false;
+            articleEnabled = true;
+            retreatArticle();
+          } else {
+            nextToReveal--;
+            $(revealList[nextToReveal]).fadeOut("slow", enableKeyPresses);
+          }
+        }
 
+        // function to advance the article to the next one
+        var advanceArticle = function () {
+          $(articles[current]).fadeOut("slow", function () {
+            current++;
+            if (current !== articles.length) {
+
+              // if the article is marked as one that has revealing elements
+              // swap the handling of events to the reveal function
+              if ($(articles[current]).hasClass("reveal")) {
+                articleEnabled = false;
+                revealEnabled = true;
+                goReveal();
+              } else {
+                $(articles[current]).fadeIn("slow", enableKeyPresses);
+              }
+
+            }
           });
         }
-      }
 
-      // function to advance the article to the next one
-      var advanceArticle = function () {
-        $(articles[current]).fadeOut("slow", function () {
-          current++;
-          if (current !== articles.length) {
-
-            // if the article is marked as one that has revealing elements
-            // swap the handling of events to the reveal function
-            if ($(articles[current]).hasClass("reveal")) {
-              articleEnabled = false;
-              revealEnabled = true;
-              goReveal();
-            } else {
-              $(articles[current]).fadeIn("slow");
+        // function to move back to the previous article
+        var retreatArticle = function () {
+          $(articles[current]).fadeOut("slow", function () {
+            if (current > 0) {
+              current--;
+              // if the article is marked as one that has revealing elements
+              // swap the handling of events to the reveal function
+              if ($(articles[current]).hasClass("reveal")) {
+                articleEnabled = false;
+                revealEnabled = true;
+                goReveal();
+              } else {
+                $(articles[current]).fadeIn("slow", enableKeyPresses);
+              }
             }
-
-          }
-        });
-      }
-
-      // function to move back to the previous article
-      var retreatArticle = function () {
-        $(articles[current]).fadeOut("slow", function () {
-          if (current > 0) {
-            current--;
-            // if the article is marked as one that has revealing elements
-            // swap the handling of events to the reveal function
-            if ($(articles[current]).hasClass("reveal")) {
-              articleEnabled = false;
-              revealEnabled = true;
-              goReveal();
-            } else {
-              $(articles[current]).fadeIn("slow");
-            }
-          }
-        });
-      }
-
-      // read to roll...
-      $(document).ready(function () {
-        $('html').removeClass('hidden');
-
-
-
-        // get all the articles within this document and hide them
-        // note the start from 1 to miss the main title
-        articles = $("article").toArray();
-        for (var i = 0; i < articles.length; i++) {
-          $(articles[i]).hide();
+          });
         }
 
-        if (manner === 'presentation') {
-          $(".notes").hide();
-        }
+        // read to roll...
+        $(document).ready(function () {
+          $('html').removeClass('hidden');
 
-        $("#waiting").show();
-
-        baguetteBox.run('.gallery', {
-          overlayBackgroundColor: "rgba(47, 39, 74, 0.8)",
-          animate: 'fadeIn'
-        });
-        //         halkaBox.options({
-        //     animation: "slide", // animation type on next/prev ("slide" || "fade")
-        //     theme: "dark",     // lightbox overlay theme ("light" || "dark")
-        //     preload: 2          // number of images to preload
-        // });
-        //         halkaBox.run("hb-single");
-
-        // For any keypresses, if it's advance or retreat do that.. 
-        $("html").keydown(function (e) {
-          var key = e.which;
-          if (key === 39 || key === 40 || key === 34) {
-            if (articleEnabled) {
-              advanceArticle()
-            } else {
-              advanceReveal();
-            }
-          } else if (key === 37 || key === 38 || key === 33) {
-            if (articleEnabled) {
-              retreatArticle();
-            } else {
-              retreatReveal();
-            }
-
+          // get all the articles within this document and hide them
+          // note the start from 1 to miss the main title
+          articles = $("article").toArray();
+          for (var i = 0; i < articles.length; i++) {
+            $(articles[i]).hide();
           }
 
-        });
+          if (manner === 'presentation') {
+            $(".notes").hide();
+          }
 
-      });
-    </script>
+          $("#waiting").show();
+
+          baguetteBox.run('.gallery', {
+            overlayBackgroundColor: "rgba(47, 39, 74, 1.0)",
+            animate: 'fadeIn',
+            buttons: false
+          });
+
+
+          // For any keypresses, if it's advance or retreat do that.. 
+          $("html").keydown(function (e) {
+
+            event.preventDefault();
+            if (!enabled) { return; }
+            var key = e.which;
+            if (key === 39 || key === 40 || key === 34) {
+              enabled = false;
+              if (articleEnabled) {
+                advanceArticle(enableKeyPresses)
+              } else {
+                advanceReveal(enableKeyPresses);
+              }
+            } else if (key === 37 || key === 38 || key === 33) {
+              enabled = false;
+              if (articleEnabled) {
+                retreatArticle(enableKeyPresses);
+              } else {
+                retreatReveal(enableKeyPresses);
+              }
+
+            }
+
+          });
+
+        });
+      </script>
 
 </body>
 

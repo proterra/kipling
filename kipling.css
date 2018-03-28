@@ -136,14 +136,24 @@ aside, nav {
 }
 .gallery .column img {
   margin-top: 8px;
+  margin-bottom: 8px;
   vertical-align: middle;
+  height: 150px;
+  object-fit: cover;
+}
+
+.gallery .center {
+  width: 100%
 }
 
 img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0.25em;
+  padding: 5px; /* Some padding */
+  width: 50px; /* Set a small width */
 }
 
 .title img {
   opacity: 0.5;
 }
+
