@@ -12,7 +12,7 @@
   are valid cases for each. I just want to be clear what's controlling the
   page/viewport height.
 */
-html, body, .viewport {
+html.presentation body, html.presentation .viewport {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -20,7 +20,7 @@ html, body, .viewport {
 /* encapsulate the various syntax in helper clases */
 /* inspired by http://infrequently.org/2009/08/css-3-progress/ */
 /* items flex/expand vertically */
-.vbox {
+html.presentation .vbox {
   /* previous syntax */
   display: -webkit-box;
   display:    -moz-box;
@@ -40,7 +40,7 @@ html, body, .viewport {
           flex-direction: column;
 }
 /* items flex/expand horizontally */
-.hbox {
+html.presentation .hbox {
   /* previous syntax */
   display: -webkit-box;
   display:    -moz-box;
@@ -60,7 +60,7 @@ html, body, .viewport {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.space-between {
+html.presentation .space-between {
   /* previous syntax */
   -webkit-box-pack: justify;
      -moz-box-pack: justify;
@@ -75,10 +75,10 @@ html, body, .viewport {
 /* I went with a fixed height header & footer because it's a common case.
   This could easily be altered to flex proportionally with the page.
 */
-header, footer {
+html.presentation header, footer {
   height: 100px;
 }
-.main {
+html.presentation .main {
   /* previous syntax */
   -webkit-box-flex: 1;
      -moz-box-flex: 1;
@@ -90,7 +90,7 @@ header, footer {
       -ms-flex: 1;
           flex: 1;
 }
-article {
+html.presentation article {
   /* previous syntax */
   -webkit-box-flex: 5;
      -moz-box-flex: 5;
@@ -102,7 +102,7 @@ article {
       -ms-flex: 5;
           flex: 5;
 }
-aside, nav {
+html.presentation aside, nav {
   /* previous syntax */
   -webkit-box-flex: 1;
      -moz-box-flex: 1;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="presentation">
 
 <head>
   <meta charset=utf-8 />
@@ -9,19 +9,27 @@
       display: none;
     }
   </style>
-  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./jquery.min.js"></script>
   <script type="text/javascript">
     $('html').addClass('hidden');
   </script>
+
+  <script src="./baguetteBox.js"></script>
+
   <link href="./normalize.css" rel="stylesheet">
   <link href="./page.css" rel="stylesheet">
   <link href="./kipling.css" rel="stylesheet">
-  <script src="./node_modules/baguettebox.js/dist/baguetteBox.js"></script>
-  <link rel="stylesheet" href="./node_modules/baguettebox.js/dist/baguetteBox.css" />
+  <link href="./document.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./baguetteBox.css" />
   <link href="./fontawesome/css/fontawesome-all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./offside.css">
+  <script src="./offside.js"></script>
 </head>
 
 <body class="vbox viewport">
+
   <header></header>
 
   <div class="main hbox space-between">
@@ -33,6 +41,9 @@
         <i class="fas fa-arrow-circle-up"></i> - Page down
         <i class="fas fa-arrow-circle-down"></i>
       </h3>
+      <div id="selection" class="center">
+        <button id="document" class="primary">View as a document</button>
+      </div>
     </article>
 
 
@@ -65,9 +76,11 @@
       </div>
 
       <div class="notes">
-        A very valuable phrasing to remember the important questions; in this discussion the two most important ones are the
+        A very valuable phrasing to remember the important questions; in this discussion the most important ones are the
+        <b>What</b>,
         <b>Why</b> and the
-        <b>How</b>. Will save the why to the end. Firstly we'll review some thoughts on the what.
+        <b>How</b>.
+
         <p>
           A good reference on the background to to Kipling's poem is
           <a href="http://standrewslean.com/blog/six-honest-serving-men/">here</a>
@@ -83,9 +96,24 @@
       <ul>
         <li class="reveal">Composition</li>
         <li class="reveal">Critiqing tips</li>
-        <li class="reveal">On judges and juding</li>
+        <li class="reveal">On judges and judging</li>
         <li class="reveal">Why?</li>
       </ul>
+
+      <div class="notes">
+        <p>
+          Firtly we'll review a definition of composition, and look at the elements involved within that; then moving on to what I've
+          found to be central 'themes' to doing good critique. This will not include an depth discussion of all the theory
+          of composition, or aesthics, or colour theory... there are many references for that.
+        </p>
+        <p>
+          As this is centred around a camera club, the subject of competitions and judging will come up.
+        </p>
+        <p>
+          One of the most important aspects that I feel is ignored - is they
+          <b>Why?</b>.
+        </p>
+      </div>
 
     </article>
 
@@ -111,8 +139,9 @@
       </ul>
 
       <p class="notes">
-        Composition, the act of chosing how How to choose include in viewfinder. How to pick settings on the camera How to adjust
-        the images on your computer or in the darkroom How to control the world before the camera. https://photographylife.com/what-is-composition-in-photography
+        Composition, the act of chosing how to include elements to make an image. What to leave in and what to leave out. There are
+        lots of definitions of the rules, and considerable body of opinion as to break the rules. A good introduction is
+        https://photographylife.com/what-is-composition-in-photography
       </p>
 
     </article>
@@ -122,8 +151,8 @@
       <img src="imgs/20130709-0044.jpg" class="right"></img>
 
       <p class="notes">
-        When a rule works it works - yippee; but it can be 'forumalic' Breaking a rule it won't make the image; but it can be an
-        'edge'
+        When a rule works it works - yippee; but it can be then be 'forumalic'. Breaking a rule it won't make the image; but it can
+        be an 'edge'. But maybe you want forumalic, because you are making a statement?
       </p>
 
     </article>
@@ -139,10 +168,15 @@
         </div>
       </div>
 
-      <p class="notes">
-        So after coming back from the walk; gravity can explain what happened and why. But it is worth knowing the basics - i.e.
-        you can't fly. So you can use the 'rules of composition' to help asses and 'frame the images' What did you see
-      </p>
+      <div class="notes">
+        So after coming back from the walk and having managed to go somewhere, and tripped over a loose paving slab, gravity can
+        explain what happened and why. But it is worth knowing the basics - i.e. you can't fly. So you can use the 'rules
+        of composition' to help review the images, and use them as a framework by which to discuss the image. So rather than
+        guidelines to use when putting the image together they can also be at their most powerful when determining "why an
+        image works" and "why an image doesn't work"
+
+        https://en.wikipedia.org/wiki/Edward_Weston
+      </div>
 
     </article>
 
@@ -201,6 +235,9 @@
           <p>Frank A. Clark</p>
         </div>
       </div>
+      <div class="notes">
+        https://en.wikipedia.org/wiki/Frank_Clark_(politician)
+      </div>
     </article>
 
     <!-- ========================================================================== -->
@@ -252,6 +289,8 @@
       </div>
       <p class="notes">
         Camera never lies; it merely presents it's own view of reality.
+
+        https://en.wikipedia.org/wiki/Giuseppe_Verdi
       </p>
     </article>
 
@@ -278,6 +317,9 @@
         <div class="source">
           <p>Paul Cezanne</p>
         </div>
+      </div>
+      <div class="notes">
+        https://en.wikipedia.org/wiki/Paul_C%C3%A9zanne
       </div>
     </article>
 
@@ -358,174 +400,191 @@
     </article>
 
 
-      <!-- ========================================================================== -->
-      <aside></aside>
+    <!-- ========================================================================== -->
+    <aside></aside>
 
-      </div>
-      <footer></footer>
+    </div>
+    <footer></footer>
 
-      <!-- ========================================================================== -->
+    <!-- ========================================================================== -->
 
-      <script>
-        // list of the articles, current article, and are we paging through articles or not
-        var articles;
-        var current = 0;
-        var articleEnabled = true;
+    <script>
+      // list of the articles, current article, and are we paging through articles or not
+      var articles;
+      var current = 0;
+      var articleEnabled = true;
 
-        // list of the parts of an article to reveal?  And are we stepping over those or not
-        var revealEnabled = false;
-        var revealList;
-        var nextToReveal = 0;
-        var enabled = true;
-        var manner = 'presentation';
-        let enableKeyPresses = function () {
-          enabled = true;
+      // list of the parts of an article to reveal?  And are we stepping over those or not
+      var revealEnabled = false;
+      var revealList;
+      var nextToReveal = 0;
+      var enabled = true;
+      var manner = 'presentation';
+      let enableKeyPresses = function () {
+        enabled = true;
+      }
+      // function to setup the reveal of an Article
+      var goReveal = function () {
+        // hide all the child elements of the current Article with the reveal class
+        revealList = $(articles[current]).find(".reveal").toArray()
+        for (var i = 0; i < revealList.length; i++) {
+          $(revealList[i]).hide();
         }
-        // function to setup the reveal of an Article
-        var goReveal = function () {
-          // hide all the child elements of the current Article with the reveal class
-          revealList = $(articles[current]).find(".reveal").toArray()
-          for (var i = 0; i < revealList.length; i++) {
-            $(revealList[i]).hide();
-          }
-          // now fade in the article, but with the marked bits hidden
-          $(articles[current]).fadeIn("slow", enableKeyPresses);
-        }
+        // now fade in the article, but with the marked bits hidden
+        $(articles[current]).fadeIn("slow", enableKeyPresses);
+      }
 
-        // function to reveal the next part of the article
-        var advanceReveal = function () {
-          let nextaction = function () {
-            $(revealList[nextToReveal - 1]).addClass("seen");
-            $(revealList[nextToReveal]).fadeIn("slow", function () {
-              nextToReveal++;
-              if (nextToReveal == revealList.length) {
-                // that's it nothing more to reveal, let's move on to the next article  when the event happens again
-                nextToReveal = 0;
-                revealEnabled = false;
-                articleEnabled = true;
+      // function to reveal the next part of the article
+      var advanceReveal = function () {
+        let nextaction = function () {
+          $(revealList[nextToReveal - 1]).addClass("seen");
+          $(revealList[nextToReveal]).fadeIn("slow", function () {
+            nextToReveal++;
+            if (nextToReveal == revealList.length) {
+              // that's it nothing more to reveal, let's move on to the next article  when the event happens again
+              nextToReveal = 0;
+              revealEnabled = false;
+              articleEnabled = true;
 
 
-              }
-              enableKeyPresses();
-            });
-
-          };
-
-          if ($(articles[current]).hasClass("solo")) {
-            if (nextToReveal > 0) {
-              $(revealList[nextToReveal - 1]).addClass("seen");
-              $(revealList[nextToReveal - 1]).fadeOut("slow", nextaction);
-            } else {
-              nextaction();
             }
+            enableKeyPresses();
+          });
+
+        };
+
+        if ($(articles[current]).hasClass("solo")) {
+          if (nextToReveal > 0) {
+            $(revealList[nextToReveal - 1]).addClass("seen");
+            $(revealList[nextToReveal - 1]).fadeOut("slow", nextaction);
           } else {
             nextaction();
           }
+        } else {
+          nextaction();
         }
+      }
 
-        var retreatReveal = function () {
-          if (nextToReveal === 0) {
-            // we're at the start but not been asked to go forward but back
-            // therefore need to swap back into 'article' progress
-            nextToReveal = 0;
-            revealEnabled = false;
-            articleEnabled = true;
-            retreatArticle();
-          } else {
-            nextToReveal--;
-            $(revealList[nextToReveal]).fadeOut("slow", enableKeyPresses);
+      var retreatReveal = function () {
+        if (nextToReveal === 0) {
+          // we're at the start but not been asked to go forward but back
+          // therefore need to swap back into 'article' progress
+          nextToReveal = 0;
+          revealEnabled = false;
+          articleEnabled = true;
+          retreatArticle();
+        } else {
+          nextToReveal--;
+          $(revealList[nextToReveal]).fadeOut("slow", enableKeyPresses);
+        }
+      }
+
+      // function to advance the article to the next one
+      var advanceArticle = function () {
+        $(articles[current]).fadeOut("slow", function () {
+          current++;
+          if (current !== articles.length) {
+
+            // if the article is marked as one that has revealing elements
+            // swap the handling of events to the reveal function
+            if ($(articles[current]).hasClass("reveal")) {
+              articleEnabled = false;
+              revealEnabled = true;
+              goReveal();
+            } else {
+              $(articles[current]).fadeIn("slow", enableKeyPresses);
+            }
+
           }
-        }
+        });
+      }
 
-        // function to advance the article to the next one
-        var advanceArticle = function () {
-          $(articles[current]).fadeOut("slow", function () {
-            current++;
-            if (current !== articles.length) {
-
-              // if the article is marked as one that has revealing elements
-              // swap the handling of events to the reveal function
-              if ($(articles[current]).hasClass("reveal")) {
-                articleEnabled = false;
-                revealEnabled = true;
-                goReveal();
-              } else {
-                $(articles[current]).fadeIn("slow", enableKeyPresses);
-              }
-
+      // function to move back to the previous article
+      var retreatArticle = function () {
+        $(articles[current]).fadeOut("slow", function () {
+          if (current > 0) {
+            current--;
+            // if the article is marked as one that has revealing elements
+            // swap the handling of events to the reveal function
+            if ($(articles[current]).hasClass("reveal")) {
+              articleEnabled = false;
+              revealEnabled = true;
+              goReveal();
+            } else {
+              $(articles[current]).fadeIn("slow", enableKeyPresses);
             }
-          });
-        }
+          }
+        });
+      }
 
-        // function to move back to the previous article
-        var retreatArticle = function () {
-          $(articles[current]).fadeOut("slow", function () {
-            if (current > 0) {
-              current--;
-              // if the article is marked as one that has revealing elements
-              // swap the handling of events to the reveal function
-              if ($(articles[current]).hasClass("reveal")) {
-                articleEnabled = false;
-                revealEnabled = true;
-                goReveal();
-              } else {
-                $(articles[current]).fadeIn("slow", enableKeyPresses);
-              }
-            }
-          });
-        }
-
-        // read to roll...
-        $(document).ready(function () {
-          $('html').removeClass('hidden');
-
-          // get all the articles within this document and hide them
-          // note the start from 1 to miss the main title
+      var showAsDocument = function () {
+        $("#waiting").fadeOut("slow", function () {
+          $("html").removeClass('presentation').addClass("document");
+          $(".notes").show();
           articles = $("article").toArray();
-          for (var i = 0; i < articles.length; i++) {
-            $(articles[i]).hide();
+          for (var i = 1; i < articles.length; i++) {
+            $(articles[i]).show();
           }
-
-          if (manner === 'presentation') {
-            $(".notes").hide();
-          }
-
-          $("#waiting").show();
-
-          baguetteBox.run('.gallery', {
-            overlayBackgroundColor: "rgba(47, 39, 74, 1.0)",
-            animate: 'fadeIn',
-            buttons: false
-          });
+          $("#waiting").hide();
+          $(".gallery").hide();
+        });
+   
 
 
-          // For any keypresses, if it's advance or retreat do that.. 
-          $("html").keydown(function (e) {
+      }
 
-            event.preventDefault();
-            if (!enabled) { return; }
-            var key = e.which;
-            if (key === 39 || key === 40 || key === 34) {
-              enabled = false;
-              if (articleEnabled) {
-                advanceArticle(enableKeyPresses)
-              } else {
-                advanceReveal(enableKeyPresses);
-              }
-            } else if (key === 37 || key === 38 || key === 33) {
-              enabled = false;
-              if (articleEnabled) {
-                retreatArticle(enableKeyPresses);
-              } else {
-                retreatReveal(enableKeyPresses);
-              }
+      // read to roll...
+      $(document).ready(function () {
+        $('html').removeClass('hidden');
 
+        // get all the articles within this document and hide them
+        // note the start from 1 to miss the main title
+        articles = $("article").toArray();
+        for (var i = 0; i < articles.length; i++) {
+          $(articles[i]).hide();
+        }
+
+        if (manner === 'presentation') {
+          $(".notes").hide();
+        }
+
+        $("#waiting").show();
+
+        baguetteBox.run('.gallery', {
+          overlayBackgroundColor: "rgba(47, 39, 74, 1.0)",
+          animate: 'fadeIn',
+          buttons: false
+        });
+
+        $("#document").click(showAsDocument);
+
+        // For any keypresses, if it's advance or retreat do that.. 
+        $("html").keydown(function (e) {
+
+          event.preventDefault();
+          if (!enabled) { return; }
+          var key = e.which;
+          if (key === 39 || key === 40 || key === 34) {
+            enabled = false;
+            if (articleEnabled) {
+              advanceArticle(enableKeyPresses)
+            } else {
+              advanceReveal(enableKeyPresses);
+            }
+          } else if (key === 37 || key === 38 || key === 33) {
+            enabled = false;
+            if (articleEnabled) {
+              retreatArticle(enableKeyPresses);
+            } else {
+              retreatReveal(enableKeyPresses);
             }
 
-          });
+          }
 
         });
-      </script>
+
+      });
+    </script>
 
 </body>
 

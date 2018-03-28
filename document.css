@@ -1,0 +1,96 @@
+html.document body,
+html.document article {
+    background-color: #f8f2e1;
+    margin: 70px;
+}
+
+html.document h1 {
+    font-weight: 400;
+    font-size: 2.50rem;
+    color: #19273C;
+    border-top: 5px solid #9B5647;
+}
+
+html.document h2 {
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 130%;
+    color: #19273C;
+    border-top: 1px solid #C2948A;
+}
+
+html.document p, html.document article p,  html.document .notes {
+    color: #19273C;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+html.document li , html.document li p{
+    color: #19273C;
+    font-weight: 600;
+    font-size: 1.50rem;
+    font-style: oblique;
+}
+
+html.document .notes {
+    padding-top: 1.5rem;
+}
+
+html.document ul {
+    display: flex;
+  
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+html.document li {
+    color: #19273C;
+    margin-right: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+  
+  }
+
+html.document  .quote {
+
+}
+
+html.document {
+    font-size: 1.0rem;
+}
+
+html.document .quote >  .text > p {
+    color: #F8F0FB;
+    font-weight: 500;
+    font-size: 1.50rem;
+}
+
+html.document .quote .source p {
+    color: #DBCBD8;
+    font-weight: 400;
+    font-size: 1.50rem;
+    font-style: oblique;
+}
+
+html.document .title img {
+    opacity: 1.0;
+}
+
+html.document .center {
+    width: 50%
+}
+
+html.document .right {
+    display: block;
+    margin-left: auto;
+    float: none;
+    height: 50%
+}
+
+html.document .gallery {
+    display: none;
+}
